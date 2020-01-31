@@ -127,10 +127,15 @@ bjorn_data [int] get_bjorn_data_sorted(boolean includeUnowned)
 	return data;
 }
 
-familiar get_best_bjorn()
+bjorn_data get_best_bjorn_data()
 {
 	bjorn_data [int] data = get_bjorn_data_sorted(false);
-	return data[data.count() - 1].fam;
+	return data[data.count() - 1];
+}
+
+familiar get_best_bjorn()
+{
+	return get_best_bjorn_data().fam;
 }
 
 void main()
