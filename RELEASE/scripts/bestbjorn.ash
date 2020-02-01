@@ -15,6 +15,11 @@ bjorn_data [int] get_bjorn_data(boolean includeUnowned)
 
 	void add_entry(familiar fam, boolean [item] drops, float dropChance, boolean limited)
 	{
+		if(!have_familiar(fam) && !includeUnowned)
+		{
+			return;
+		}
+
 		bjorn_data entry;
 		entry.fam = fam;
 		foreach it in drops
