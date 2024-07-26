@@ -63,6 +63,7 @@ bjorn_data [int] get_bjorn_data(boolean includeUnowned)
 	add_entry($familiar[reanimated reanimator], $items[broken skull, broken skull, broken skull, broken skull, hot wing], 1);
 	add_entry($familiar[warbear drone], $items[warbear whosit], 1.0 / 4.5);
 	add_entry($familiar[golden monkey], $items[gold nuggets], 0.5);
+	add_entry($familiar[mini kiwi], $items[mini kiwi], 0.08);
 
 	void limited_add_entry(familiar fam, boolean [item] drops, float dropChance, string prop, int limit)
 	{
